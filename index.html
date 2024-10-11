@@ -14,6 +14,11 @@
   <header>
     <nav class="container">
       <div class="logo">getITDone</div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links">
         <li><a href="services.html">Services</a></li>
         <li><a href="demo.html">Demo Videos</a></li>
@@ -222,6 +227,21 @@
     }
 
     setInterval(updateTestimonial, 5000);
+      // Hamburger menu functionality
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      const navLinksItems = document.querySelectorAll('.nav-links a');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Add this new code to close menu when a link is clicked
+      navLinksItems.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
   </script>
 </body>
 
