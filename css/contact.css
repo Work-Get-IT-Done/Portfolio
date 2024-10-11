@@ -66,10 +66,17 @@ nav {
   color: var(--secondary-color);
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
 .contact-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://source.unsplash.com/random/1600x900/?office") no-repeat center
-      center/cover;
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)),
+    url("https://source.unsplash.com/random/1600x900/?office") no-repeat center;
   height: 40vh;
   display: flex;
   align-items: center;
