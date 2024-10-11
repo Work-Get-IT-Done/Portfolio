@@ -1,0 +1,190 @@
+<html>
+
+<head>
+  <title>getITDone - Professional IT Solutions for Your Business</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">getITDone</div>
+      <ul class="nav-links">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="demo.html">Demo Videos</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Empowering Your Business with Cutting-Edge IT Solutions</h1>
+        <p class="tagline">Transform your digital presence with getITDone's expert technology services</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About getITDone</h2>
+      <p>getITDone is your trusted partner in navigating the complex world of IT. We offer comprehensive technology
+        solutions tailored to meet the unique needs of your business. With our team of skilled professionals and years
+        of industry experience, we're committed to delivering innovative, efficient, and scalable IT services that drive
+        your success.</p>
+    </section>
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Web Design</h3>
+            <p>Custom websites with responsive designs tailored to client needs.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h3>Full Stack Development</h3>
+            <p>Complete front-end and back-end development for robust web applications.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-database"></i></div>
+            <h3>Database Management</h3>
+            <p>Database optimization and security to ensure smooth operations.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Database Creation</h3>
+            <p>Custom database design and implementation for your unique needs.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-cloud service-icon"></i>
+            </div>
+            <h3>Cloud Solutions</h3>
+            <p>Leverage the power of cloud computing for your business.</p>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt service-icon"></i>
+            </div>
+            <h3>Cybersecurity</h3>
+            <p>Protect your digital assets with our robust security solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial">
+            <p class="testimonial-text">"getITDone transformed our outdated systems into a streamlined, efficient
+              network. Their expertise and professionalism are unmatched!"</p>
+            <p class="testimonial-author">- John Smith, CEO of TechCorp</p>
+          </div>
+          <!-- Add more testimonials here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-videos container">
+      <h2>Demo Videos</h2>
+      <div class="video-gallery">
+        <div class="video-item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="video-item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <!-- Add more video items here -->
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact Us</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="19c2b72e-71a8-457a-b95b-0ed969c9109d">
+
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="/thanks.html"> -->
+
+        <button type="submit">Submit Form</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 getITDone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+
+    // Simple testimonial slider
+    const testimonials = [
+      {
+        text: "getITDone transformed our outdated systems into a streamlined, efficient network. Their expertise and dedication are unmatched!",
+        author: "Sarah Johnson, CEO of TechInnovate",
+      },
+      {
+        text: "The team at getITDone went above and beyond to deliver a website that exceeded our expectations. Highly recommended!",
+        author: "Michael Chen, Founder of StartUp Hub",
+      },
+      {
+        text: "Their cloud solutions have significantly improved our productivity and reduced our IT costs. getITDone is a game-changer!",
+        author: "Emily Rodriguez, CTO of CloudMasters",
+      },
+    ];
+
+    let currentTestimonial = 0;
+    const testimonialText = document.querySelector(".testimonial-text");
+    const testimonialAuthor = document.querySelector(".testimonial-author");
+
+    function updateTestimonial() {
+      const { text, author } = testimonials[currentTestimonial];
+      testimonialText.textContent = text;
+      testimonialAuthor.textContent = `- ${author}`;
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    }
+
+    setInterval(updateTestimonial, 5000);
+  </script>
+</body>
+
+</html>

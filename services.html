@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <title>Our Services - getITDone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/services.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">getITDone</div>
+      <ul class="nav-links">
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <!-- <li><a href="https://getitdone.tech/portfolio">Portfolio</a></li> -->
+        <li><a href="demo.html">Demo Videos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services" class="container">
+      <h1>Our Services</h1>
+      <p>At getITDone, we offer a comprehensive range of IT solutions to meet your business needs. Our expert team is
+        dedicated to delivering high-quality services that drive your success.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-laptop-code service-icon"></i>
+          <h3 class="service-title">Web Design</h3>
+          <p class="service-description">Custom websites with responsive designs tailored to your brand and business
+            needs. We create visually appealing and user-friendly interfaces that engage your audience and drive
+            conversions.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-code service-icon"></i>
+          <h3 class="service-title">Full Stack Web Development</h3>
+          <p class="service-description">Comprehensive front-end and back-end development solutions. Our team of skilled
+            developers can build robust, scalable web applications that power your business operations and enhance user
+            experiences.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-database service-icon"></i>
+          <h3 class="service-title">Database Management</h3>
+          <p class="service-description">Database optimization and security services to ensure your data is efficiently
+            organized, easily accessible, and protected. We implement best practices to maintain data integrity and
+            improve performance.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-server service-icon"></i>
+          <h3 class="service-title">Database Creation</h3>
+          <p class="service-description">Custom database design and implementation tailored to your specific
+            requirements. We create efficient, scalable database solutions that support your business processes and data
+            management needs.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-cloud service-icon"></i>
+          <h3 class="service-title">Cloud Solutions</h3>
+          <p class="service-description">Harness the power of cloud computing for your business. We offer cloud
+            migration, setup, and management services to improve scalability, reduce costs, and enhance collaboration
+            within your organization.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-shield-alt service-icon"></i>
+          <h3 class="service-title">Cybersecurity</h3>
+          <p class="service-description">Protect your digital assets with our robust security solutions. We implement
+            advanced security measures, conduct regular audits, and provide employee training to safeguard your business
+            against cyber threats.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-cogs service-icon"></i>
+          <h3 class="service-title">IT Consulting</h3>
+          <p class="service-description">Expert guidance on technology strategy and implementation. Our consultants work
+            closely with you to align IT solutions with your business goals, optimizing processes and driving
+            innovation.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-mobile-alt service-icon"></i>
+          <h3 class="service-title">Software Development</h3>
+          <p class="service-description">Custom software solutions designed to address your unique business challenges.
+            From mobile apps to enterprise software, we develop tailored applications that streamline operations and
+            enhance productivity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to transform your IT infrastructure?</h2>
+      <p>Let's discuss how our services can benefit your business.</p>
+      <a href="https://getitdone.tech/contact" class="cta-button">Get in Touch</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 getITDone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Highlight active service on hover
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.backgroundColor = '#d1e6ff';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.backgroundColor = 'var(--accent-color)';
+      });
+    });
+  </script>
+</body>
+
+</html>
